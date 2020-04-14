@@ -24,10 +24,10 @@ if valid_directory:
 
     # creating variables from user input.
     a = []
-    file_format = input("Enter file format. Example '.mkv','.mp4','.avi' : ")
-    file_name = input("Enter TV_show name name. Example 'One Piece' : ")
-    season = input("Enter Season Number. Example '01','02','03','04' : ")
-    starting_episode = int(input("Enter Starting Episode Number. Example '1','2','3','4' : "))
+    file_format = input("Enter file format. Example '.mkv','.mp4','.avi' : ").replace("'",'').replace('"','')
+    file_name = input("Enter TV_show name name. Example 'One Piece' : ").replace("'",'').replace('"','')
+    season = input("Enter Season Number. Example '01','02','03','04' : ").replace("'",'').replace('"','')
+    starting_episode = int(input("Enter Starting Episode Number. Example '1','2','3','4' : ").replace("'",'').replace('"',''))
 
     # checks for file format in the files.
     for item in files_dir:
