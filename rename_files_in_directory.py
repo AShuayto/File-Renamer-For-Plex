@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# File Name: rename_files_in_directory.py
 #Simple Python program to rename files in a directory to conform with plex standard: 'Example - S01E01'.
 #You will be prompted to enter file format, file name, season, and starting episode.
 
@@ -7,9 +9,7 @@ from os import listdir
 directory = input("Enter full directory path:")
 
 # adds a trailing / to the user input file directory if it's not already there.
-if directory.endswith("/"):
-    pass
-else:
+if not directory.endswith("/"):
     directory = directory + "/"
 
 # checks if valid directory.
